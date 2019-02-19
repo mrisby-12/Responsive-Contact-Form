@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact From</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span>Contact</span> Form</h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <h3>Company Name</h3>
+          <ul>
+            <li>
+              <i class="fa fa-road"></i> 123 Anywhere St | Anycity | ST 12345
+            </li>
+            <li><i class="fa fa-phone"></i> (123)456-7890</li>
+            <li><i class="fa fa-envelope"></i> email@email.com</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          <div class="alert">Your message has been sent</div>
+          <form id="contactForm">
+            <p>
+              <label>Name</label> <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" id="company" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone" required />
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="full"><button type="submit">Submit</button></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
